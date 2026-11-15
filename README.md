@@ -15,4 +15,4 @@ A responsive, mobile-friendly multi-page student portfolio built with plain HTML
 
 ## Personalizing Your Site
 1. Replace `images/profile.png` with your own photo (keep the filename `profile.png` or update `index.html`).
-2. Replace `Amina Yusuf` and the sample details in the HTML files with your own name, courses, and links.
+2. Replace `mfonobong I,tommy` and the sample details in the HTML files with your own name, courses, and links.
