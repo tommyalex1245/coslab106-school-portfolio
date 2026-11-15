@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mfonobong I.Tommy | Student Portfolio &amp; Academic Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Amina<span>.edu</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        &#9776;
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content fade-in">
+          <p class="badge" id="dynamicGreeting">Welcome to my Academic Portfolio</p>
+          <h1>Hi, I'm <span class="highlight">Amina Yusuf</span></h1>
+          <p class="subtitle">B.Sc. Computer Science Student &bull; Aspiring Web Developer</p>
+          <p class="bio">
+            I am an undergraduate Computer Science student passionate about building clean,
+            mobile-friendly web applications and solving practical problems with code.
+            Use the menu above to explore my academic profile, projects, and interactive study planner.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">Explore My Projects</a>
+            <a href="planner.html" class="btn btn-secondary">Open Academic Planner</a>
+          </div>
+        </div>
+
+        <figure class="hero-image fade-in">
+          <img src="images/profile.png" alt="Portrait photograph of Amina Yusuf">
+          <figcaption>Amina Yusuf &mdash; Computer Science Undergraduate</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="highlights section-padding">
+      <div class="container">
+        <h2 class="section-title">Quick Overview</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Academic Profile</h3>
+            <p>Learn about my university coursework, technical toolkit, career goals, and personal interests.</p>
+            <a href="about.html" class="card-link">Go to About Me &rarr;</a>
+          </article>
+
+          <article class="card">
+            <h3>Featured Projects</h3>
+            <p>Browse responsive websites and interactive JavaScript applications built during my studies.</p>
+            <a href="projects.html" class="card-link">View Projects &rarr;</a>
+          </article>
+
+          <article class="card">
+            <h3>Academic Planner</h3>
+            <p>Add coursework assignments, mark completed tasks, and stay organized on any device.</p>
+            <a href="planner.html" class="card-link">Launch Planner &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="currentYear"></span> Amina Yusuf &mdash; COS 106 Student Portfolio. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

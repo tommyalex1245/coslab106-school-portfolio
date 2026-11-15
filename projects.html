@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Mfonobong I.Tommy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Amina<span>.edu</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        &#9776;
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-padding">
+    <div class="container">
+      <header class="page-header fade-in">
+        <h1>My Projects</h1>
+        <p>Sample web development projects demonstrating responsive design and interactive JavaScript.</p>
+      </header>
+
+      <section class="projects-grid">
+        <article class="project-card fade-in">
+          <img src="images/project1.png" alt="Screenshot of Campus Event Hub project">
+          <div class="project-body">
+            <span class="project-tag">HTML5 &bull; CSS Grid &bull; Responsive</span>
+            <h2>Campus Event Hub</h2>
+            <p>
+              A mobile-friendly university noticeboard and event portal where students can view upcoming
+              seminars, coding meetups, and departmental announcements.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/example-student/campus-event-hub" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Code</a>
+              <a href="https://example-student.github.io/campus-event-hub" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <img src="images/project2.png" alt="Screenshot of Interactive CGPA Calculator project">
+          <div class="project-body">
+            <span class="project-tag">JavaScript &bull; DOM Manipulation</span>
+            <h2>Interactive CGPA Calculator</h2>
+            <p>
+              A browser-based GPA calculator built with plain JavaScript that lets students enter course
+              units and grades to compute their semester GPA automatically.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/example-student/cgpa-calculator" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Code</a>
+              <a href="https://example-student.github.io/cgpa-calculator" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <img src="images/project3.png" alt="Screenshot of Pomodoro Study Timer project">
+          <div class="project-body">
+            <span class="project-tag">HTML &bull; CSS Transitions &bull; JS Events</span>
+            <h2>Pomodoro Study Timer</h2>
+            <p>
+              A clean study timer featuring 25-minute focus sessions, 5-minute breaks, and session tracking
+              to help university students stay focused during exam revision.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/example-student/pomodoro-study-timer" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Code</a>
+              <a href="https://example-student.github.io/pomodoro-study-timer" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live Demo</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="card multimedia-section fade-in">
+        <h2>Project Walkthrough Video</h2>
+        <p>Watch a quick overview of this multi-page portfolio and academic planner:</p>
+        <video controls class="demo-video" poster="images/video-poster.png">
+          <source src="media/project-demo.mp4" type="video/mp4">
+          Your browser does not support the HTML5 video element.
+        </video>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="currentYear"></span> Amina Yusuf &mdash; COS 106 Student Portfolio. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

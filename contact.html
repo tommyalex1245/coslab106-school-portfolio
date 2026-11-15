@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Mfonobong I.Tommy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Amina<span>.edu</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        &#9776;
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-padding">
+    <div class="container">
+      <header class="page-header fade-in">
+        <h1>Contact Me</h1>
+        <p>Have a question or want to connect? Fill out the form below.</p>
+      </header>
+
+      <div class="contact-grid">
+        <aside class="card contact-info fade-in">
+          <h2>Student Information</h2>
+          <p>You can reach me through the contact form or via my student details:</p>
+          <ul class="styled-list">
+            <li><strong>University:</strong> MIVA Open University</li>
+            <li><strong>Department:</strong> Computer Science</li>
+            <li><strong>Email:</strong> amina.yusuf@student.miva.edu.ng</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/example-student" target="_blank" rel="noopener noreferrer">github.com/example-student</a></li>
+          </ul>
+        </aside>
+
+        <section class="card contact-form-card fade-in">
+          <h2>Send a Message</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+              <small class="error-text" id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="emailAddress">Email Address</label>
+              <input type="email" id="emailAddress" name="emailAddress" placeholder="e.g., student@example.com">
+              <small class="error-text" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" inputmode="numeric" placeholder="Digits only, e.g., 08012345678">
+              <small class="error-text" id="phoneError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="messageText">Message</label>
+              <textarea id="messageText" name="messageText" rows="5" placeholder="Write your message here..."></textarea>
+              <small class="error-text" id="messageError"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div id="formSuccessMessage" class="success-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="currentYear"></span> Amina Yusuf &mdash; COS 106 Student Portfolio. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

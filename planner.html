@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Mfonobong I.Tommy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Amina<span>.edu</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        &#9776;
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html" class="active">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-padding">
+    <div class="container">
+      <header class="page-header fade-in">
+        <h1>Academic Task Planner</h1>
+        <p>Add coursework assignments, mark completed tasks, and manage your study schedule.</p>
+      </header>
+
+      <div class="planner-stats fade-in">
+        <div class="stat-box">
+          <span class="stat-number" id="totalTasksCount">0</span>
+          <span class="stat-label">Total Tasks</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number" id="pendingTasksCount">0</span>
+          <span class="stat-label">Pending</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number" id="completedTasksCount">0</span>
+          <span class="stat-label">Completed</span>
+        </div>
+      </div>
+
+      <section class="card planner-card fade-in">
+        <h2>Add a New Task</h2>
+        <form id="taskForm" class="task-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="taskTitle">Task Name</label>
+              <input type="text" id="taskTitle" placeholder="e.g., Submit COS 106 Portfolio Project">
+            </div>
+            <div class="form-group">
+              <label for="taskCourse">Course</label>
+              <select id="taskCourse">
+                <option value="COS 106">COS 106 - Web Technologies</option>
+                <option value="COS 102">COS 102 - Programming</option>
+                <option value="MTH 102">MTH 102 - Mathematics II</option>
+                <option value="GST 104">GST 104 - Study Skills</option>
+                <option value="General">General Study</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="taskDueDate">Due Date</label>
+              <input type="date" id="taskDueDate">
+            </div>
+          </div>
+          <p class="error-text" id="taskError" aria-live="polite"></p>
+          <button type="submit" class="btn btn-primary">+ Add Task</button>
+        </form>
+      </section>
+
+      <section class="card planner-list-card fade-in">
+        <div class="list-header">
+          <h2>My Task List</h2>
+          <div class="filter-buttons" role="group" aria-label="Filter tasks">
+            <button type="button" class="filter-btn active" data-filter="all">All</button>
+            <button type="button" class="filter-btn" data-filter="pending">Pending</button>
+            <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+          </div>
+        </div>
+
+        <ul id="taskList" class="task-list"></ul>
+        <p id="emptyTaskMessage" class="empty-state">No tasks in this view. Add a new task above!</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="currentYear"></span> Amina Yusuf &mdash; COS 106 Student Portfolio. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
